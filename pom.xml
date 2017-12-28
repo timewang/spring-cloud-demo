@@ -11,6 +11,7 @@
         <module>demo-client</module>
         <module>config-service</module>
         <module>demo-netflix</module>
+        <module>demo-netflix2</module>
         <module>eureka-server</module>
     </modules>
 
@@ -49,6 +50,10 @@
                     <target>8</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
