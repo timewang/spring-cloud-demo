@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: config-service
+---
+spring:
+  profiles: primary
+server:
+  port: 8888
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+---
+spring:
+  profiles: secondary
+server:
+  port: 8889
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/

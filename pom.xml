@@ -12,6 +12,7 @@
         <module>config-service</module>
         <module>demo-netflix</module>
         <module>eureka-server</module>
+        <module>zipkin-service</module>
     </modules>
 
     <parent>
