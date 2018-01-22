@@ -10,6 +10,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.sleuth.SpanName;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,7 +22,10 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableDiscoveryClient
 @EnableFeignClients
 @RestController
+@Configuration
 public class Application {
+
+    //@Bean
 
     private static Logger logger = LoggerFactory.getLogger(Application.class);
 
@@ -31,6 +36,7 @@ public class Application {
     @Autowired
     private UserClient userClient;
 
+    @SpanName("calculateTax")
     @GetMapping("default")
     public User defaultUser() {
         this.logger.info("调用服务获取用户信息");

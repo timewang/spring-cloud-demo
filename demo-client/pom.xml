@@ -40,6 +40,34 @@
             <artifactId>spring-cloud-sleuth-zipkin</artifactId>
         </dependency>
 
+
+        <!-- https://mvnrepository.com/artifact/io.zipkin.reporter2/zipkin-reporter-spring-beans -->
+       <!-- <dependency>
+            <groupId>io.zipkin.reporter2</groupId>
+            <artifactId>zipkin-reporter-spring-beans</artifactId>
+            <version>2.3.0</version>
+        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/io.zipkin.reporter2/zipkin-sender-okhttp3 -->
+        <!--<dependency>
+            <groupId>io.zipkin.reporter2</groupId>
+            <artifactId>zipkin-sender-okhttp3</artifactId>
+            <version>2.3.0</version>
+        </dependency>-->
+
+        <!--<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-sleuth-zipkin-stream</artifactId>
+        </dependency>
+        -->
+
+        <!--<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+            <version>1.0.11.RELEASE</version>
+        </dependency>-->
+
+
     </dependencies>
 
 </project>
