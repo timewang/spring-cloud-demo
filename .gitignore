@@ -4,6 +4,10 @@
 
 # IntelliJ project files
 .idea
+.gradle
+.project
+.classpath
+.settings
 *.iml
 out
 gen
